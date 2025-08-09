@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MatchingFlo — Telegram Spielbot</title>
+  <meta name="description" content="MatchingFlo — ein kleines Schere/Stein/Papier Spiel als Telegram-Bot. Kontakt und Impressum." />
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:36px auto;color:#111;line-height:1.5;padding:0 18px}
+    header{display:flex;gap:16px;align-items:center}
+    img.logo{width:72px;height:72px;border-radius:12px;object-fit:cover}
+    h1{margin:0;font-size:1.6rem}
+    .card{background:#fff;border:1px solid #eee;padding:18px;border-radius:8px;margin-top:18px;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+    footer{margin-top:28px;font-size:0.9rem;color:#555}
+    a{color:#0b66ff}
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.png" alt="MatchingFlo Logo" onerror="this.style.display='none'">
+    <div>
+      <h1>MatchingFlo</h1>
+      <div>Telegram-Bot: Schere • Stein • Papier — Multiplayer Inline-Spiel</div>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>Kurzbeschreibung</h2>
+    <p>MatchingFlo ist ein einfacher Spiel-Bot für Telegram, mit dem zwei Personen per Inline-Nachricht ein Schere/Stein/Papier-Duell starten können. Der Bot wird gehostet (Render) und über die Telegram API betrieben.</p>
+    <p>Diese Seite dient als Impressum und Kontaktseite, damit Meta / Facebook die Geschäfts-Identität prüfen kann.</p>
+  </section>
+
+  <section class="card">
+    <h2>Kontakt & Betreiber</h2>
+    <p><strong>Betreiber:</strong> MatchingFlo</p>
+    <p><strong>Kontakt-E-Mail:</strong> <a href="mailto:deinname@example.com">deinname@example.com</a>  ← bitte ersetzen</p>
+    <p><strong>Business Telefonnummer:</strong> +49 123 4567890 ← optional</p>
+  </section>
+
+  <section class="card">
+    <h2>Impressum</h2>
+    <p>MatchingFlo<br>
+    Inhaber: Vorname Nachname<br>
+    Adresse: Musterstraße 1, 12345 Stadt, Land</p>
+    <p>Alle Angaben auf dieser Seite sind für die Zwecke der Meta/WhatsApp Business Verifikation bestimmt.</p>
+  </section>
+
+  <section class="card">
+    <h2>Datenschutz (Kurz)</h2>
+    <p>Wir speichern nur temporär Spielzustände und anonyme Session-Statistiken. Für Support / Löschanfragen schreibe an <a href="mailto:deinname@example.com">deinname@example.com</a>.</p>
+    <p>Volle Datenschutzdetails: <a href="privacy.html">privacy policy</a> (kurze Version).</p>
+  </section>
+
+  <footer>
+    <p>Stand: <span id="now"></span> — Diese Seite ist automatisch generiert für Meta-Verifikation.</p>
+    <script>document.getElementById('now').innerText = new Date().toLocaleString();</script>
+  </footer>
+</body>
+</html>
